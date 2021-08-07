@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title> three numbers </title>
+</head>
+<body>
+    <form>
+        <label> Input 1st number </label>
+        <input type = "number" id ="1st" value ="">
+
+        <label> Input 2nd number </label>
+        <input type = "number" id ="2nd" value ="">
+
+        <button type ="button" onclick = "multiply()"> Submit </button>
+       </form>
+       <p id="calculate"> </p>
+
+       <script>
+        function multiply(){
+        
+            var q = document.getElementById("1st").value;
+            var w = document.getElementById("2nd").value;
+            q=parseInt(q);
+            w=parseInt(w);
+            var mul=q*w;
+            document.getElementById("calculate").innerHTML = "The product is = "+mul;   
+        }
+            </script>
+            </body>
+            </html>
